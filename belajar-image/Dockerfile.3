@@ -1,0 +1,8 @@
+FROM ubuntu:20.04
+LABEL maintainer="Indah Fanisa Putri"
+
+RUN apt-get update
+WORKDIR /home/coba
+
+RUN echo "Hello saya dari container3" > file3.txt
+CMD ["echo", "Hello dari container 3 ..."]
