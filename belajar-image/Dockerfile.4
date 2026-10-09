@@ -4,8 +4,7 @@ LABEL maintainer="Indah Fanisa Putri"
 RUN apt-get update
 WORKDIR /home/coba/
 
-RUN echo "Hello, World image ini buatan Indah Fanisa Putri ke 3" > coba.
-
+RUN echo "Hello saya dari container 4" > file3.txt
 COPY folder4 /home/coba/
 
-CMD ["echo", "hello, World image ini buatan Indah Fanisa Putri ke 3 "]
+CMD ["echo", "hello dari container 4 ... "]
